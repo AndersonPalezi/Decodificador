@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Metadados -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Link para a fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+    
+    <!-- Link para o arquivo de estilo -->
+    <link rel="stylesheet" href="./style/style.css" />
+    
+    <!-- Título da página -->
+    <title>Criptografador</title>
+</head>
+
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <img class="logo" src="./img/Logo.svg" alt="logo" />
+    </header>
+    
+    <!-- Corpo da página -->
+    <main>
+        <!-- Primeira seção -->
+        <section class="sessao__1">
+            <!-- Área de texto -->
+            <div class="conteiner__texto">
+                <textarea placeholder="Digite o texto aqui " class="texto"></textarea>
+            </div>
+            
+            <!-- Alerta -->
+            <div class="alerta">
+                <img src="./img/alerta.svg" alt="alerta" />
+                <p><strong>Apenas letras minúsculas e sem acento</strong></p>
+            </div>
+            
+            <!-- Botões de encriptar e desencriptar -->
+            <div class="conteiner__button">
+                <input type="button" id="btnEncriptar" class="btn__encriptar" value="Encriptar" />
+                <input type="button" id="btnDesencriptar" class="btn__desencriptar" value="Desencriptar" />                
+            </div>
+        </section>
+        
+        <!-- Segunda seção -->
+        <section class="sessao__2">
+            <!-- Imagem de resultado -->
+            <div class="conteiner__img">
+                <img src="./img/resultado.svg" alt="muñeco" />
+            </div>
+            
+            <!-- Parágrafos informativos -->
+            <div class="conteiner__paragrafo">
+                <h3>
+                    Nenhuma mensagem <br />
+                    encontrada
+                </h3>
+                <p>
+                    Digite um texto que você deseja <br />
+                    criptografar ou descriptografar.
+                </p>
+            </div>
+            
+            <!-- Botão de copiar e área de resultado -->
+            <div class="conteiner__copiar">
+                <input type="button" class="btn__copiar" value="Copiar" />
+            </div>
+            <div class="conteiner__resultado">
+                <p class="texto__resultado"></p>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Script JavaScript -->
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
